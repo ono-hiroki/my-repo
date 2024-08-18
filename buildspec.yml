@@ -18,6 +18,6 @@ phases:
   post_build:
     commands:
       - echo "Creating imagedefinitions.json..."
-      - printf '[{"name":"example","imageUri":"%s"}]' $IMAGE > imagedefinitions.json
+      - printf '[{"name":"nginx","imageUri":"%s"}]' $IMAGE > imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
