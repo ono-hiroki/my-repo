@@ -19,5 +19,6 @@ phases:
     commands:
       - echo "Creating imagedefinitions.json..."
       - printf '[{"name":"nginx","imageUri":"%s"}]' $IMAGE > imagedefinitions.json
+      - codebuild-breakpoint
 artifacts:
   files: imagedefinitions.json
